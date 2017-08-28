@@ -1,6 +1,7 @@
 //Variables:
 //Computer's Generated number
-var computerNum = Math.floor(Math.random() * 101) + 19;
+// var computerNum = Math.floor(Math.random() * 101) + 19;
+var computerNum = '';
 console.log(computerNum);
 //Crystal numbers
 var userTotal = '';
@@ -12,10 +13,14 @@ var addTwo = '';
 var addThree = '';
 var addFour = '';
 // console.log(userTotal);
-var crystalOne = Math.floor(Math.random() * 12 + 1);
-var crystalTwo = Math.floor(Math.random() * 12 + 1);
-var crystalThree = Math.floor(Math.random() * 12 + 1);
-var crystalFour = Math.floor(Math.random() * 12 + 1);
+// var crystalOne = Math.floor(Math.random() * 12 + 1);
+var crystalOne = '';
+// var crystalTwo = Math.floor(Math.random() * 12 + 1);
+var crystalTwo = '';
+// var crystalThree = Math.floor(Math.random() * 12 + 1);
+var crystalThree = '';
+// var crystalFour = Math.floor(Math.random() * 12 + 1);
+var crystalFour = '';
 //User Input/A way to store collective points
 
 //Win/Loss variable
@@ -26,7 +31,14 @@ var lossCounter = 0;
 //Random Generator for computer number
 $( document ).ready(function() {
 
-function gametart() {
+function gameStart() {
+computerNum = Math.floor(Math.random() * 101) + 19;	
+crystalOne = Math.floor(Math.random() * 12 + 1);
+crystalTwo = Math.floor(Math.random() * 12 + 1);
+crystalThree = Math.floor(Math.random() * 12 + 1);
+crystalFour = Math.floor(Math.random() * 12 + 1);
+
+
 return computerNum;
 return crystalOne;
 return crystalTwo;
@@ -34,19 +46,18 @@ return crystalThree;
 return crystalFour;
 }
 
-
+gameStart();
 
 function computerGenNum() {
-
-	$("#computer-number").html(computerNum);
+$("#computer-number").html(computerNum);
 }
 computerGenNum();
+
 
 
 //Generator for Crystal points
 
 $("#crystal-one").on("click", function(event){
-	 // addOne = crystalOne;
 	 userTotal = crystalOne;
 	console.log(userTotal);
 	return userTotal;
@@ -82,6 +93,7 @@ $("#crystal-one, #crystal-two, #crystal-three, #crystal-four").on("click", funct
 		 console.log(winCounter);
 		 $("#wins").html(winCounter);
 		return winCounter;
+		
 	}
 	else if(counter > computerNum) {
 
@@ -90,12 +102,18 @@ $("#crystal-one, #crystal-two, #crystal-three, #crystal-four").on("click", funct
 		 console.log(lossCounter);
 		 $("#losses").html(lossCounter);
 		return lossCounter;
+		
 	}
 
 })
 
 $(".reset").on("click", function(){
+gameStart();
+computerGenNum();
+userTotal = 0;
 counter = 0;
+// userTotal = counter;
+	$("#points").html(userTotal);
 });
 
 });
