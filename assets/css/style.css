@@ -1,0 +1,9 @@
+body {
+	background: url(../images/gaming-pattern.png);
+
+}
+
+img:hover {
+
+	border: 5px solid yellow;
+}
