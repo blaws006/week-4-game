@@ -125,22 +125,3 @@ counter = 0;
 });
 
 });
-
-
-
-// function winLossDisplay() {
-// 	// winCounter += win;
-// 	// lossCounter += loss;
-	
-	
-
-	
-// };
-
-// winLossDisplay();
-
-//on-click event that adds up the points of crystals
-//Win/loss determinant function, switch case statement maybe
-
-
-//Additional logic

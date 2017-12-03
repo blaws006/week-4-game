@@ -5,5 +5,15 @@ body {
 
 img:hover {
 
-	border: 5px solid yellow;
+	border: 5px solid #4ba9a5;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;  
+}
+
+button {
+  background-color: #4ba9a5;
+  color: #ffffff;
 }
