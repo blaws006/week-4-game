@@ -1,5 +1,8 @@
-# week-4-game
+# Crystal Collections
+
 A game about collecting crystals. Click the four crystals to get the right amount. If you collect too many, you lose!
+
+![Crystal Collection](https://media.giphy.com/media/3ohs4fdkXNwpPsi6wo/giphy.gif)
 
 Each Round:
 
