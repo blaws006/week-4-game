@@ -11,3 +11,5 @@ Each Round:
 - Clicking on crystal image adds that value to the bucket of collected crystals
 - Tracks win or loss and gives the option to play again
 - Hitting the Play Again button restarts the random value generation again
+
+## [Play the game here!](https://blaws006.github.io/week-4-game/)
